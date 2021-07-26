@@ -184,8 +184,6 @@ body{
 @media screen and (max-width: 400px){
     body{
         overflow: auto;
-        overflow-x: hidden;
-        max-width: 100%;
     }
 }
 .project-title {
