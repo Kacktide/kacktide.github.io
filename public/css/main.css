@@ -1,0 +1,166 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap");
+:root {
+  font-size: 16px;
+}
+body {
+  --primary: #111821;
+  --btn-active: rgba(189, 189, 189, 0.37);
+  --secondary: #171f29;
+  --navbar: #12181b;
+  --text-clr: #fff;
+  --clrnormal: rgb(65, 65, 65);
+  margin: 0;
+  padding: 0;
+  background: var(--primary);
+  transition: 0.2s ease;
+}
+
+::selection {
+  background: rgba(100, 25, 240, 0.35);
+}
+body * {
+  color: var(--text-clr);
+}
+body.light {
+  --navbar: #c7c7c7;
+  --primary: #eee;
+  --text-clr: #181818;
+  --secondary: #c7c7c7;
+  --btn-active: rgba(29, 29, 29, 0.37);
+  --clrnormal: rgb(202, 202, 202);
+  transition: 0.2s ease;
+}
+* {
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  list-style: none;
+  text-decoration: none;
+}
+
+.togglebtn {
+  background: var(--secondary);
+  padding: 1.2em 0.7em;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  color: var(--text-clr);
+  cursor: pointer;
+  display: inline-block;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  transition: 0.3s ease;
+}
+.togglebtn:focus {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px, 0 0 0 3px var(--btn-active);
+}
+.main-wrapper {
+  text-align: center;
+  margin-top: 16vw;
+  margin-bottom: 0;
+  padding: 0;
+}
+
+.navbar {
+  display: flex;
+  width: 100%;
+  margin: 0;
+  background: var(--secondary);
+  font-size: calc(1rem + 0.5vw);
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.4em 0.3em;
+  box-shadow: rgba(29, 29, 29, 0.2) 0px 2px 8px 0px;
+}
+.nav-items {
+  display: flex;
+}
+.nav-links {
+  transition: 0.3s ease;
+  position: relative;
+  padding: 0.5em 0.3em;
+}
+
+.nav-links::after {
+  content: "";
+  width: 100%;
+  position: absolute;
+  height: 2.5px;
+  bottom: 0;
+  left: 0;
+  transform-origin: center;
+  transform: scale(0);
+  background: var(--text-clr);
+  transition: 0.3s ease;
+}
+.nav-links:hover::after {
+  transform: scale(1);
+}
+
+.logo {
+  font-weight: bold;
+  font-size: calc(1.2rem + 0.5vw);
+}
+
+.toggle {
+  height: 22px;
+  width: 28px;
+  position: absolute;
+  z-index: 1010100;
+  display: none;
+  justify-content: space-between;
+  flex-direction: column;
+  cursor: pointer;
+  right: 3%;
+}
+.bars {
+  width: 100%;
+  height: 2px;
+  border-radius: 8px;
+  background: var(--text-clr);
+}
+.nolink {
+  transition: 0.3s ease;
+  padding: 0.2em;
+}
+
+.main-wrapper h1 {
+  font-size: 5rem;
+  display: block;
+  margin-bottom: 0;
+  font-family: "Action Is", sans-serif;
+  font-weight: normal;
+  text-shadow: 3px 3px 0 var(--clrnormal), 3px -3px 0 var(--clrnormal),
+    -3px 3px 0 var(--clrnormal), -3px -3px 0 var(--clrnormal),
+    3px 0px 0 var(--clrnormal), 0px 3px 0 var(--clrnormal),
+    -3px 0px 0 var(--clrnormal), 0px -3px 0 var(--clrnormal);
+}
+.brbm {
+  width: 40%;
+  height: 0.6px;
+  opacity: 0.7;
+  position: relative;
+}
+.brmbaf {
+  height: 20px;
+  width: 30px;
+  transform: translate(-50%, -100%);
+  position: relative;
+  background: var(--primary);
+  left: 50%;
+  pointer-events: none;
+  transition: 0.2s ease;
+}
+
+.about {
+  margin: 0 auto;
+  margin-top: -1rem;
+  max-width: 550px;
+  padding: 0 20px;
+}
+
+@media (max-width: 405px) {
+  .navbar {
+    flex-direction: column;
+    justify-content: center;
+    font-size: calc(0.6rem + 1vw);
+  }
+}

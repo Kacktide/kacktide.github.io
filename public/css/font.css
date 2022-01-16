@@ -1,0 +1,8 @@
+@font-face {
+  font-family: "Action Is";
+  src: url("ActionIs.woff2") format("woff2"),
+    url("ActionIs.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
