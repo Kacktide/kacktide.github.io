@@ -11,7 +11,7 @@ body {
   --clrnormal: rgb(65, 65, 65);
   --button: rgba(255, 255, 255, 0.1);
   margin: 0;
-  padding: 0;
+  padding: 0; 
   background: var(--primary);
   transition: 0.2s ease;
 }
