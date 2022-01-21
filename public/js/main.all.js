@@ -17,3 +17,9 @@ document.addEventListener("DOMContentLoaded", () => {
         addTheme();
     });
 });
+
+const copyBtn = document.getElementById("copyBtn");
+copyBtn.addEventListener("click", () => {
+  window.navigator.clipboard.writeText(copyBtn.innerText);
+  Swal.fire("Copied!", "ID has been copied to clipboard!", "success");
+});
