@@ -16,33 +16,112 @@
     />
   </head>
   <body>
-    <nav class="navbar">
-      <div class="logo">FURY</div>
-      <div class="toggle">
-        <span class="bars"></span>
-        <span class="bars"></span>
+    <section class="main-section">
+      <nav class="navbar">
+        <div class="logo">FURY</div>
+        <div class="toggle">
+          <span class="bars"></span>
+          <span class="bars"></span>
+        </div>
+        <ul class="nav-items">
+          <li><a href="#" class="nav-links">Home</a></li>
+          <li><a href="#projects" class="nav-links">Projects</a></li>
+          <li><a href="#contact" class="nav-links">Contact</a></li>
+          <li>
+            <a style="cursor: pointer" id="ef" class="nolink dlmode"
+              ><i id="nolink" class="fas fa-moon"></i
+            ></a>
+          </li>
+        </ul>
+      </nav>
+      <div class="main-wrapper">
+        <h1>FURY</h1>
+        <hr class="brbm" />
+        <div class="brmbaf"></div>
+        <p class="about">
+          Frontend Developer. Makes open-sourced & works on projects
+        </p>
       </div>
-      <ul class="nav-items">
-        <li><a href="#" class="nav-links">Home</a></li>
-        <li><a href="#" class="nav-links">About</a></li>
-        <li><a href="#" class="nav-links">Services</a></li>
-        <li><a href="#" class="nav-links">Contact</a></li>
-        <li>
-          <a style="cursor: pointer" id="ef" class="nolink dlmode"
-            ><i id="nolink" class="fas fa-moon"></i
-          ></a>
-        </li>
-      </ul>
-    </nav>
-    <div class="main-wrapper">
-      <h1>FURY</h1>
-      <hr class="brbm" />
-      <div class="brmbaf"></div>
-      <p class="about">
-        Frontend Developer. Makes open-sourced & works on projects
-      </p>
-    </div>
+    </section>
+    <section class="projects-section" id="projects">
+      <div class="project-title">my projects</div>
+      <div class="projects">
+        <div class="project">
+          <div class="project-img">
+            <img src="public/img/project1.png" alt="project1" />
+          </div>
+          <div class="project-info">
+            <h2>Soul Music</h2>
+            <p>Website for an amazing and popular Discord music bot.</p>
+            <a href="https://soulmusic.pro" target="_blank" class="btn">
+              <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
 
+        <div class="project">
+          <div class="project-img">
+            <img src="public/img/project2.png" alt="project2" />
+          </div>
+          <div class="project-info">
+            <h2>OxyBoat</h2>
+            <p>Website for another awesome Discord music bot.</p>
+            <a style="cursor: not-allowed" class="btn">
+              <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+        <div class="project">
+          <div class="project-img">
+            <img src="public/img/project3.png" alt="project3" />
+          </div>
+          <div class="project-info">
+            <h2>Solar Bot Website</h2>
+            <p>
+              Another of my many discord bot website projects. This one is a
+              template avialable in github.
+            </p>
+            <a
+              href="https://github.com/Kacktide/Discord-Bot-Website-Template"
+              target="_blank"
+              class="btn"
+            >
+              <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="contact-section" id="contact">
+      <div class="contact-title">Contact Me</div>
+      <div class="buttons">
+        <a id="copyBtn" class="button button-contact"
+          ><i class="fab fa-discord fa-fw"></i> FURY#6717</a
+        >
+        <a
+          style="margin-left: 1rem"
+          href="mailto:caciscool10@gmail.com"
+          class="button button-contact"
+          ><i class="fas fa-envelope fa-fw"></i> E-mail</a
+        >
+      </div>
+    </section>
+    <section class="footer">
+      <footer class="footer-body">
+        <p class="footer-text">
+          &copy; 2022 itsmefury.codes, Made by <strong>FURY#6717</strong>
+        </p>
+        <div class="icons-footer">
+          <a
+            class="icon"
+            href="https://github.com/Kacktide/Personal-Website"
+            target="_blank"
+            >Project public on <i class="fab fa-github"></i
+          ></a>
+        </div>
+      </footer>
+    </section>
     <script defer src="public/js/main.all.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   </body>
 </html>
