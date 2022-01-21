@@ -9,7 +9,7 @@ body {
   --navbar: #12181b;
   --text-clr: #fff;
   --clrnormal: rgb(65, 65, 65);
-  --button: rgba(255, 255, 255, 0.1);
+  --button: rgba(255, 255, 255, 0.1); 
   margin: 0;
   padding: 0; 
   background: var(--primary);
