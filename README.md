@@ -1,5 +1,3 @@
 # Personal-Website
 
-**WORK IN PROGRESS**
-
-I am working on a better version 😉
+Spent some time on it
